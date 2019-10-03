@@ -1,0 +1,103 @@
+V "GNAT Lib v2019"
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_TERMINATE_ALTERNATIVES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=3
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1
+
+U new_stack%b		new_stack.adb		d81cdeea OO PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U new_stack%s		new_stack.ads		4e4dc788 EE OO PK IL
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-finali.ads		20190518041255 bf4f806b ada.finalization%s
+D a-reatim.ads		20190518041256 0240fc73 ada.real_time%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D new_stack.ads		20191002145338 4e4dc788 new_stack%s
+D new_stack.adb		20191002145339 96511962 new_stack%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-atacco.ads		20190518041256 4c36d12f system.address_to_access_conversions%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-finroo.ads		20190518041256 4ff27390 system.finalization_root%s
+D s-multip.ads		20190518041254 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20190518124528 e40aaf2d system.os_constants%s
+D s-osinte.ads		20190518041257 01b3ad47 system.os_interface%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stausa.ads		20190518041255 017a0a05 system.stack_usage%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20190518041256 801abd01 system.task_info%s
+D s-taspri.ads		20190518041256 f40ac08d system.task_primitives%s
+D s-taprop.ads		20190518041256 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20190518041257 b9d612e2 system.tasking%s
+D s-taprob.ads		20190518041256 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20190518041257 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20190518041256 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20190518041256 cca55c94 system.tasking.stages%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [push new_stack 3 12 none]
+G c Z s b [pop new_stack 4 11 none]
+G c Z b b [Tthe_stackBIP new_stack 9 2 none]
+G c Z b b [stack_callTK new_stack 13 7 none]
+G c Z b b [push new_stack__stack_call 14 11 none]
+G c Z b b [pop new_stack__stack_call 15 11 none]
+G c Z b b [stack_callTKVIP new_stack 13 2 none]
+G c Z b b [P4bIP new_stack 14 5 none]
+G c Z b b [P7bIP new_stack 15 5 none]
+X 10 new_stack.ads
+2K9*new_stack 6l5 6e14 11|7b14 57l5 57t14
+3U12*push 3>17 11|45b12 48t6
+3i17 x{integer} 11|45b17 47r21
+4V11*pop{integer} 11|50b11 55t5
+5X2*stack_overflow 11|24r21
+5X18*stack_underflow 11|33r19
+X 11 new_stack.adb
+8I10 stack_index{integer} 9r20
+9a2 the_stack(integer) 26m14 36r17
+10i2 index{integer} 23r15 26r24 27m14 27r23 32r14 35m13 35r22 36r27
+11b2 finished{boolean}
+13t7 stack_call 18b12 43l6 43t16 47r5 53r4
+14Y11 push 14>16 22b16 29l13 29t17 47s16
+14i16 x{integer} 26r34
+15Y11 pop 15<15 31b15 38l12 38t15 53s15
+15i15 y{integer} 36m13 36r13
+22i21 x{integer}
+31i19 y{integer}
+51i4 r{integer} 53m19 54r11
+X 23 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

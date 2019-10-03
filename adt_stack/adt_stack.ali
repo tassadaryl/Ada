@@ -1,0 +1,50 @@
+V "GNAT Lib v2019"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U adt_stack%b		adt_stack.adb		10319d75 NE OO PK IL
+Z ada.exceptions%s	a-except.adb		a-except.ali
+
+U adt_stack%s		adt_stack.ads		eb21837f EE OO PK IL
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D adt_stack.ads		20191002031904 eb21837f adt_stack%s
+D adt_stack.adb		20191002032008 fb101e0a adt_stack%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+G a e
+G c Z s b [initialize adt_stack 3 14 none]
+G c Z s b [push adt_stack 4 14 none]
+G c Z s b [pop adt_stack 5 14 none]
+G c Z s s [Tint_arrayBIP adt_stack 8 4 none]
+G c Z s s [stackIP adt_stack 9 9 none]
+X 4 adt_stack.ads
+1K9*adt_stack 8E9 13l5 13e14 5|1b14 28l5 28t14
+2R9*stack 3r32 4r29 5r28 9c9 12e18 5|3r26 13r26 23r30
+3U14*initialize 3<25 5|23b12 26t5
+3r25 s{2R9} 5|23b23 25m4
+4U14*push 4=19 4>36 5|3b12 11t6
+4r19 s{2R9} 5|3b17 5r9 8m7 8r19 9m7 9r18
+4i36 x{integer} 5|3b33 8r31
+5U14*pop 5=18 5<35 5|13b12 21t5
+5r18 s{2R9} 5|13b16 15r8 18m5 18r16 19r11 19r23
+5i35 x{integer} 5|13b33 19m5
+6X4*stack_overflow 5|6r13
+6X20*stack_underflow 5|16r12
+8A9 int_array(integer)<integer> 10r19
+10a8*the_stack{8A9} 5|8m9 19r13
+11i8*index{integer} 5|5r11 8r21 9m9 9r20 15r10 18m7 18r18 19r25 25m6
+
